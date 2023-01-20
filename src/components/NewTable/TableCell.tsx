@@ -7,7 +7,6 @@ interface Props {
 
 export const TableCell = ({ children, className }: Props) => {
   const styles = "py-2 border border-slate-300" + (" " + (className ?? ""));
-  console.log(styles)
 
   return (
     <td className={styles}>
