@@ -1,7 +1,8 @@
 // File structure is temporary
 import data from "../../../data/dataS1.json";
 
-type SportEvent = typeof data.schedules[number];
+export type GamesResponse = typeof data
+export type SportEvent = typeof data.schedules[number];
 
 export interface Score {
   half: number;
@@ -40,7 +41,7 @@ const toStatus = (status: string): GameStatus => {
 const getScore = (status: GameStatus, score = 0): number => status === "postponed" ? 0 : score;
 
 // toModel
-const sportEventToGame = (sportEvent: SportEvent): Game => {
+export const sportEventToGame = (sportEvent: SportEvent): Game => {
   const { id, start_time, venue, competitors } = sportEvent.sport_event;
   const { winner_id, period_scores, home_score, away_score } = sportEvent.sport_event_status;
   
@@ -78,4 +79,4 @@ const sportEventToGame = (sportEvent: SportEvent): Game => {
   }
 };
 
-export const games = data.schedules.map(sportEventToGame);
+// export const games = data.schedules.map(sportEventToGame);
