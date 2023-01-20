@@ -5,7 +5,7 @@ export const TableHeader = () => {
   return (
     <thead>
       <tr>
-        {tableHeadNames.stepOne.map((e) => (
+        {tableHeadNames.stepTwo.map((e) => (
           <ThCell key={e.id} tableHeaderText={e.headName} />
         ))}
       </tr>

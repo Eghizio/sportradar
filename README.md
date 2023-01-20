@@ -70,8 +70,9 @@ Project is: _in progress_
 
 Room for improvement:
 
-- Improvement to be done 1
-- Improvement to be done 2
+- Data should be taken by app not created by CTRL-C,CTRL-V from   [Sportradar](https://developer.sportradar.com/)
+- As completely non-artistic soul UX/UI should be correct.
+
 
 To do:
 
